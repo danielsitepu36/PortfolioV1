@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap");
+
+html,
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: #ffffff;
+}
+.container {
+  padding-left: 15%;
+  padding-right: 15%;
+  margin: 100px auto 0 auto;
+  max-width: 1200px;
+}
+a {
+  text-decoration: none;
+}
