@@ -8,7 +8,7 @@ const styles = (theme) => ({
 class Project extends Component {
   render() {
     const { classes } = this.props;
-    return <div>ProjectPage</div>;
+    return <div className={classes.Home}>Project Under development</div>;
   }
 }
 

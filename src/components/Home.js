@@ -8,6 +8,17 @@ import { Button } from "@material-ui/core";
 
 const styles = (theme) => ({
   ...theme.spreadIt,
+  imageWrapper: {
+    textAlign: "center",
+    position: "relative",
+  },
+  profileImage: {
+    width: 400,
+    height: 400,
+    objectFit: "cover",
+    maxWidth: "100%",
+    borderRadius: "50%",
+  },
   leftDiv: {
     margin: "60px auto",
   },
@@ -42,9 +53,9 @@ class Home extends Component {
   render() {
     const { classes } = this.props;
     return (
-      <div>
+      <div className={classes.Home}>
         <Grid container spacing={3}>
-          <Grid item sm={7} xs={12}>
+          <Grid item md={7} sm={12}>
             <div className={classes.leftDiv}>
               <Typography
                 variant="caption"
@@ -66,11 +77,24 @@ class Home extends Component {
                 1 year experience in website production and UI/UX, mainly use
                 Node, React, Express, Firebase, and MongoDB for production
               </Typography>
-              <Button className={classes.projectButton}>Contact Me</Button>
+              <Button
+                href="mailto:danielsitepu96@gmail.com"
+                className={classes.projectButton}
+              >
+                Contact Me
+              </Button>
             </div>
           </Grid>
-          <Grid item sm={5} xs={12}>
-            <div className={classes.rightDiv}>Right Section</div>
+          <Grid item md={5} sm={12}>
+            <div className={classes.rightDiv}>
+              <div className={classes.imageWrapper}>
+                <img
+                  src={process.env.PUBLIC_URL + "/ProfileFix.png"}
+                  alt="profile"
+                  className={classes.profileImage}
+                />
+              </div>
+            </div>
           </Grid>
         </Grid>
         <Typography variant="body2" className={classes.bottomQuote}>

@@ -29,4 +29,40 @@ export default {
         "linear-gradient(to right, #4A00E0, #8E2DE2)" /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */,
     },
   },
+  home: {
+    "& .image-wrapper": {
+      textAlign: "center",
+      position: "relative",
+      "& button": {
+        position: "absolute",
+        top: "80%",
+        left: "70%",
+      },
+    },
+    "& .profile-image": {
+      width: 200,
+      height: 200,
+      objectFit: "cover",
+      maxWidth: "100%",
+      borderRadius: "50%",
+    },
+    "& .profile-details": {
+      textAlign: "center",
+      "& span, svg": {
+        verticalAlign: "middle",
+      },
+      "& a": {
+        color: "#00bcd4",
+      },
+    },
+    "& hr": {
+      border: "none",
+      margin: "0 0 10px 0",
+    },
+    "& svg.button": {
+      "&:hover": {
+        cursor: "pointer",
+      },
+    },
+  },
 };
